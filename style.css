@@ -2,9 +2,32 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-   /* background-image: linear-gradient(red, yellow, blue);*/
 }
 
+p{
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+    margin-top: 5px;
+    letter-spacing: 0.05rem;
+    font-weight: 300px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+#desc{
+    font-size: 30px;
+    letter-spacing: 0.07rem;
+    line-height: 35px;
+}
+
+img{
+    height: 500px;
+    width: 800px;
+    background-size: cover;
+    justify-content: center;
+    display: flex;
+    border-radius: 10px;
+}
 .pc{
     display: flex;
 }
@@ -15,6 +38,11 @@
     width:  100%;
     position: fixed;
     justify-content: center;
+    margin-top: 50px;
+}
+.navlist .main{
+    font-size: 25px;
+    font-weight: 200;
 }
 
 .navlist li{
@@ -41,8 +69,8 @@
     background-color: #b2c7f5;
     width: 30%;
     height: 100vh;
-    display: flex;
-    align-items: center;
+    /* display: flex; */
+    /* align-items: center; */
     
 }
 .icons .fa-brands{
@@ -58,6 +86,7 @@
 }
 .content{
     margin-left: 4rem;
+    width:800px;
 }
 .content .intro{
     font-size: 1.5rem;
@@ -77,13 +106,15 @@ h2{
 }
 #b1, #b2, #b3{
     color: #fff;
+    font-size: 25px;
 }
 #b3{
     color: #fff;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 #n1, #n2, #n3{
     color: #fff;
+    font-size: 25px;
 }
 .content .detail{
     font-size: 1.1rem;
@@ -108,9 +139,18 @@ button:nth-child(2){
     color: #3877ff;
     margin-left: 2rem;
 }
-button :nth-child(1):hover{
+button:nth-child(1):hover{
+    background: transparent;
+    color:#5db9ee;
+}
+
+button:nth-child(2):hover{
     background: #5db9ee;
     color:#262525;
+}
+
+.main{
+    font-size: larger;
 }
 .icons .fa-brands:hover{
     cursor: pointer;
@@ -159,4 +199,175 @@ button :nth-child(1):hover{
 .navlist li a:hover::after, .navlist .active::after{ 
     transform: scaleX(1);
     transform-origin: bottom left;
+}
+
+section{
+    background-color: #262525;
+}
+.section-title h1{
+    color: black;
+}
+section-title span{
+    color: #5db9ee;
+}
+.project-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.project-header{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: larger;
+    color: #fff;
+}
+.project-container{
+    border-top: 2px solid #fff;
+}
+
+#projects .all-projects{
+    justify-content:center;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 50px;
+    border-top: 2px solid #fff;
+}
+.project-img{
+    justify-content: center;
+    display: flex;
+    margin: 50px;
+}
+.project-info h1{
+    margin-top: 40px;
+}
+#projects .projects-items:hover .project-img img{
+  transform: scale(1.1);
+}
+
+.about{
+    display: flex;
+}
+.section-title{
+    color: #fff;
+    font-size: 3rem;
+   margin-top: 20px;
+}
+.about-right {
+    padding: 40px; /* Adds space between text and image */
+}
+.about-left {
+    display: flex;
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center; /* Centers the image vertically */
+    height: 100%; /* Ensures the div takes up full height */
+}
+
+.about-img img {
+    border-radius: 10%; /* Makes the image round */
+    display: block;
+}
+
+.about-right p {
+    font-size: 25px; /* Adjust paragraph size */
+    line-height: 1.6; /* Improves readability */
+}
+.about-right h2 {
+    font-size: 30px; 
+}
+.cta {
+    display: inline-block; 
+    padding: 12px 24px; 
+    background-color: #007bff; 
+    color: #fff; /* Text color */
+    text-decoration: none; /* Removes underline */
+    font-size: 20px; /* Adjust text size */
+    font-weight: bold;
+    border-radius: 6px; /* Rounded corners */
+    border: 2px solid #0056b3; /* Optional: Border */
+    transition: 0.3s ease-in-out;
+}
+.cta:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    border-color: #004494;
+}
+
+/* Contact Section Styling */
+.contact {
+    background-color: #f8f9fa; /* Light gray background */
+    padding: 50px 20px;
+    text-align: center;
+    border-top: 4px solid white;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 36px;
+    font-weight: bold;
+    color:white;
+    margin-bottom: 50px;
+}
+
+/* Contact Container */
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Contact Items */
+.contact-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Contact Item */
+.contact-item {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease-in-out;
+    border-top: 4px solid #007bff;
+}
+
+.contact-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Icon Styling */
+.icon img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+/* Contact Info */
+.info h1 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 5px;
+}
+
+.info h2 {
+    font-size: 18px;  /* Increase font size */
+    color: #555;      /* Make text darker */
+    font-weight: normal;  /* Keep it readable */
+    margin-bottom: 5px; /* Add spacing */
+}
+.contact {
+    background-color: #262525; /* Light gray background */
+    padding: 50px 20px;
+    text-align: center;
 }
