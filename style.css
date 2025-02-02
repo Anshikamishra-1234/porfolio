@@ -125,11 +125,17 @@ h2{
 }
 .btn button{
     border: .1rem solid #3877ff;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     padding: .8rem 1.5rem;
     border-radius: .5rem;
+    text-decoration: none;
     cursor: pointer;
     transition: .5s ease;
+    color: #fff;
+}
+.btn button a{
+    text-decoration: none;
+    color: #fff;
 }
 button:nth-child(1){
     background: #3877ff;
@@ -371,3 +377,29 @@ section-title span{
     padding: 50px 20px;
     text-align: center;
 }
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .footer-container {
+    max-width: 900px;
+    margin: auto;
+  }
+
+  .social-icons a {
+    color: #f4f4f4;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .social-icons a:hover {
+    color: #ff9800;
+  }
