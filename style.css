@@ -108,6 +108,10 @@ h2{
     color: #fff;
     font-size: 25px;
 }
+
+#about-link{
+    color: #fff;
+}
 #b3{
     color: #fff;
     margin-bottom: 20px;
@@ -156,7 +160,8 @@ button:nth-child(2):hover{
 }
 
 .main{
-    font-size: larger;
+    font-size:20px;
+    color: #fff;
 }
 .icons .fa-brands:hover{
     cursor: pointer;
@@ -211,7 +216,7 @@ section{
     background-color: #262525;
 }
 .section-title h1{
-    color: black;
+    color: #fff;
 }
 section-title span{
     color: #5db9ee;
@@ -402,4 +407,8 @@ footer {
 
   .social-icons a:hover {
     color: #ff9800;
+  }
+
+  .about-right{
+    color: #fff;
   }
